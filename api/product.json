@@ -1,0 +1,59 @@
+[
+    {
+        "productid": 1,
+        "productcategory": "Fashion",
+        "producttitle":"White T-Shirt President University",
+        "productprice": "IDR150000",
+        "productimg": "./images/product-01.jpg",
+        "Productdesc": "Hoodie President University"
+    },
+    {
+        "productid": 2,
+        "productcategory": "Fashion",
+        "producttitle":"Maroon Hoodie President University",
+        "productprice": "IDR270000",
+        "productimg": "./images/product-02.jpg",
+        "Productdesc": "Hoodie President University"
+    },
+    {
+        "productid": 3,
+        "productcategory": "Fashion",
+        "producttitle":"White Hoodie President University",
+        "productprice": "IDR270000",
+        "productimg": "./images/product-03.jpg",
+        "Productdesc": "Hoodie President University"
+    },
+    {
+        "productid": 4,
+        "productcategory": "Fashion",
+        "producttitle":"Navy Blue Hoodie President University",
+        "productprice": "IDR270000",
+        "productimg": "./images/product-04.jpg",
+        "Productdesc": "Hoodie President University"
+    },
+    {
+        "productid": 5,
+        "productcategory": "Fashion",
+        "producttitle":"Navy T-Shirt President University",
+        "productprice": "IDR150000",
+        "productimg": "./images/product-05.jpg",
+        "Productdesc": "Hoodie President University"
+    },
+    {
+        "productid": 6,
+        "productcategory": "Fashion",
+        "producttitle":"Hoodie PresUniv",
+        "productprice": "IDR270000",
+        "productimg": "./images/product-06.jpg",
+        "Productdesc": "Hoodie President University"
+    },
+    {
+        "productid": 7,
+        "productcategory": "Books",
+        "producttitle":"10 Habits Of Highly Productive People",
+        "productprice": "IDR88000",
+        "productimg": "./images/product-07.jpg",
+        "Productdesc": "Hoodie President University"
+    }
+    
+]
