@@ -1,59 +1,74 @@
 [
     {
-        "productid": 1,
+        "id": 1,
         "productcategory": "fashion",
-        "producttitle":"White T-Shirt President University",
+        "producttitle": "White T-Shirt President University",
         "productprice": "IDR150000",
         "productimg": "./images/product-01.jpg",
-        "Productdesc": "Hoodie President University"
-    },
-    {
-        "productid": 2,
+        "productsubdesc": "T-Shirt President University",
+        "productdesc": "T-Shirt President University. Short-sleeved t-shirts made exclusively with the theme 'President University'. One of the best selling t-shirts with screen printed designs & an interesting combination of designs. The material used is selected quality cotton which absorbs sweat so as to provide comfort for anyone who wears it.",
+        "productmaterial": "80% cotton combed",
+        "productdimensions": "110x33x100cm"
+    }, {
+        "id": 2,
         "productcategory": "fashion",
-        "producttitle":"Maroon Hoodie President University",
+        "producttitle": "Maroon Hoodie President University",
         "productprice": "IDR270000",
         "productimg": "./images/product-02.jpg",
-        "Productdesc": "Hoodie President University"
-    },
-    {
-        "productid": 3,
+        "productsubdesc": "Hoodie President University",
+        "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
+        "productmaterial": "80% cotton combed",
+        "productdimensions": "110x33x100cm"
+    }, {
+        "id": 3,
         "productcategory": "fashion",
-        "producttitle":"White Hoodie President University",
+        "producttitle": "White Hoodie President University",
         "productprice": "IDR270000",
         "productimg": "./images/product-03.jpg",
-        "Productdesc": "Hoodie President University"
-    },
-    {
-        "productid": 4,
+        "productsubdesc": "Hoodie President University",
+        "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
+        "productmaterial": "80% cotton combed",
+        "productdimensions": "110x33x100cm"
+    }, {
+        "id": 4,
         "productcategory": "fashion",
-        "producttitle":"Navy Blue Hoodie President University",
+        "producttitle": "Blue Hoodie President University",
         "productprice": "IDR270000",
         "productimg": "./images/product-04.jpg",
-        "Productdesc": "Hoodie President University"
-    },
-    {
-        "productid": 5,
+        "productsubdesc": "Hoodie President University",
+        "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
+        "productmaterial": "80% cotton combed",
+        "productdimensions": "110x33x100cm"
+    }, {
+        "id": 5,
         "productcategory": "fashion",
-        "producttitle":"Navy T-Shirt President University",
+        "producttitle": "Navy T-Shirt President University",
         "productprice": "IDR150000",
         "productimg": "./images/product-05.jpg",
-        "Productdesc": "Hoodie President University"
-    },
-    {
-        "productid": 6,
+        "productsubdesc": "T-Shirt President University",
+        "productdesc": "T-Shirt President University. Short-sleeved t-shirts made exclusively with the theme 'President University'. One of the best selling t-shirts with screen printed designs & an interesting combination of designs. The material used is selected quality cotton which absorbs sweat so as to provide comfort for anyone who wears it.",
+        "productmaterial": "80% cotton combed",
+        "productdimensions": "110x33x100cm"
+    }, {
+        "id": 6,
         "productcategory": "fashion",
-        "producttitle":"Hoodie PresUniv",
+        "producttitle": "Hoodie PresUniv",
         "productprice": "IDR270000",
         "productimg": "./images/product-06.jpg",
-        "Productdesc": "Hoodie President University"
-    },
-    {
-        "productid": 7,
+        "productsubdesc": "Hooide President University",
+        "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
+        "productmaterial": "80% cotton combed",
+        "productdimensions": "110x33x100cm"
+    }, {
+        "id": 7,
         "productcategory": "books",
-        "producttitle":"10 Habits Of Highly Productive People",
+        "producttitle": "10 Habits Of Highly Productive People",
         "productprice": "IDR88000",
         "productimg": "./images/product-07.jpg",
-        "Productdesc": "Hoodie President University"
+        "productsubdesc": "Indonesian Book: Elex Media Komputindo",
+        "productdesc": "10 Habits of Highly Productive People: is a practical guide designed to help you achieve high levels of productivity and create yourself as a strong and competitive person. These proven habits can be applied in various aspects of life, from personal life to career, and from corporate strategy to business. In a disruptive era full of rapid and unpredictable changes, being a productive human being is the key to remaining relevant and successfully facing it. \n\n Author: Jazak Yus Afriansyah & Maria Jacinta Arquisola \n Publisher: Elex Media Komputindo Cover \n Type: Soft Cover Indonesian",
+        "productmaterial": "art paper",
+        "productdimensions": "110x33x100cm"
     }
-    
+
 ]
