@@ -120,8 +120,8 @@
 	<!-- Slider -->
 	<section class="section-slide">
 		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(images/slide-01.png);">
+			<div class="slick1 slider-list">
+				<!-- <div class="item-slick1" style="background-image: url(images/slide-01.png);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -161,7 +161,7 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+								<a href="./produc-store.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 									Shop Now
 								</a>
 							</div>
@@ -185,13 +185,13 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+								<a href="./product-store.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 									Shop Now
 								</a>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -256,7 +256,7 @@
 
 
 	<!-- Product -->
-	<section class="bg0 p-t-23 p-b-140">
+	<section class="bg0 p-t-23 p-b-140 product-container">
 		<div class="container">
 			<div class="p-b-10">
 				<h3 class="ltext-103 cl5">
@@ -556,59 +556,179 @@
 
 
 	<script>
-        let products = null;
-        // get datas from file json
-        fetch('./api/product.json')
-            .then(response => response.json())
-            .then(data => {
-                products = data;
-                addDataToHTML();
-        })
+    //     let products = null;
+    //     // get datas from file json
+    //     fetch('./api/product.json');
+	// 	fetch('./api/carousel.json')
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             products = data;
+	// 			sliders =data;
+    //             addDataToHTML();
+    //     })
 
-        function addDataToHTML(){
-    // remove datas default from HTML
-        let listProductHTML = document.querySelector('.product-list');
+    //     function addDataToHTML(){
+    // // remove datas default from HTML
+    //     let listProductHTML = document.querySelector('.product-list');
+    //     let listSliderHTML = document.querySelector('.slider-list');
 
-        // add new datas
-        if(products != null) // if has data
-        {
-            products.forEach(product => {
-                let newProduct = document.createElement('a');
-                newProduct.href = './product-detail.html?id=' + product.productid;
-                newProduct.classList.add('block2-btn.flex-c-m.stext-103.cl2.size-102.bg0.bor2.ov-btn1.p-lr-15.trans-04');
-                newProduct.innerHTML = 
-                `<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item" id="${product.productcategory}">
-					<!-- Block2 -->
-					<div class="block2 product-card">
-						<div class="block2-pic hov-img0">
-							<img class="product-img" src="${product.productimg}" alt="IMG-PRODUCT">
-						</div>
 
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l product-title ">
-								<a class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									${product.producttitle}
-								</a>
+    //     // add new datas
+    //     if(products != null) // if has data
+    //     {
+    //         products.forEach(product => {
+    //             let newProduct = document.createElement('a');
+    //             newProduct.href = './product-detail.html?id=' + product.productid;
+    //             newProduct.classList.add('block2-btn.flex-c-m.stext-103.cl2.size-102.bg0.bor2.ov-btn1.p-lr-15.trans-04');
+    //             newProduct.innerHTML = 
+    //             `<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item" id="${product.productcategory}">
+	// 				<!-- Block2 -->
+	// 				<div class="block2 product-card">
+	// 					<div class="block2-pic hov-img0">
+	// 						<img class="product-img" src="${product.productimg}" alt="IMG-PRODUCT">
+	// 					</div>
 
-								<span class="stext-105 cl3 price">
-									${product.productprice}
+	// 					<div class="block2-txt flex-w flex-t p-t-14">
+	// 						<div class="block2-txt-child1 flex-col-l product-title ">
+	// 							<a class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+	// 								${product.producttitle}
+	// 							</a>
+
+	// 							<span class="stext-105 cl3 price">
+	// 								${product.productprice}
+	// 							</span>
+	// 						</div>
+
+	// 						<div class="block2-txt-child2 flex-r p-t-3">
+	// 							<p class="btn-addwish-b2 dis-block pos-relative">
+	// 								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
+	// 								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+	// 							</p>
+	// 						</div>
+	// 					</div>
+	// 				</div>
+	// 			</div>`;
+    //             listProductHTML.appendChild(newProduct);
+
+    //         });
+    //     };
+	// 	if(sliders != null) // if has data
+    //     {
+    //         sliders.forEach(slider => {
+    //             let sliderList = document.createElement('span');
+    //             sliderList.innerHTML = 
+    //             `<div class="item-slick1" style="background-image: url(${slider.sliderbg});">
+	// 				<div class="container h-full">
+	// 					<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+	// 						<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+	// 							<span class="ltext-101 cl2 respon2">
+	// 								${slider.slidertitle}
+	// 							</span>
+	// 						</div>
+								
+	// 						<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+	// 							<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+	// 								${slider.slidersub}
+	// 							</h2>
+	// 						</div>
+								
+	// 						<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+	// 							<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+	// 								Shop Now
+	// 							</a>
+	// 						</div>
+	// 					</div>
+	// 				</div>
+	// 			</div>`;
+    //             listSliderHTML.appendChild(sliderList);
+
+    //         });
+    //     }
+    // }
+	async function fetchData(type = "carousel") {
+  let response;
+  type === "carousel"
+    ? (response = await fetch("./api/carousel.json"))
+    : (response = await fetch("./api/product.json"));
+  const data = await response.json();
+  return data;
+}
+
+function showCarousel(carousel) {
+  let carouselContainer = document.querySelector(
+    ".section-slide .slider-list"
+  );
+  let carouselHTML = "";
+  carousel.forEach((carousel) => {
+    carouselHTML += `
+	<div class="item-slick1 item-slider" style="background-image: url(${carousel.slidersbg});">
+					<div class="container h-full">
+						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+								<span class="ltext-101 cl2 respon2">
+									${carousel.sliderstit}
 								</span>
 							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<p class="btn-addwish-b2 dis-block pos-relative">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
-								</p>
+								
+							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+									${carousel.sliderssub}
+								</h2>
+							</div>
+								
+							<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+									Shop Now
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>`;
-                listProductHTML.appendChild(newProduct);
+  });
+  carouselContainer.innerHTML = carouselHTML;
+}
+function showProduct(product) {
+  let productContainer = document.querySelector(".product-container .product-list");
+  let productHTML = "";
+  product.forEach((product) => {
+    productHTML += `
+	<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item" id="${product.productcategory}">
+		<!-- Block2 -->
+<div class="block2 product-card">
+<div class="block2-pic hov-img0">
+						<img class="product-img" src="${product.productimg}" alt="IMG-PRODUCT">
+ 					</div>
 
-            });
-        }
-    }
+ 					<div class="block2-txt flex-w flex-t p-t-14">
+ 						<div class="block2-txt-child1 flex-col-l product-title ">
+ 							<a class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+ 								${product.producttitle}
+ 							</a>
+
+ 							<span class="stext-105 cl3 price">
+ 								${product.productprice}
+ 							</span>
+ 						</div>
+
+ 						<div class="block2-txt-child2 flex-r p-t-3">
+ 							<p class="btn-addwish-b2 dis-block pos-relative">
+ 								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
+ 								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+ 							</p>
+ 						</div>
+ 					</div>
+ 				</div>
+			</div>
+        `;
+  });
+  productContainer.innerHTML = productHTML;
+}
+fetchData("carousel").then((data) => {
+  showCarousel(data);
+});
+fetchData("product").then((data) => {
+  showProduct(data);
+});
 
     </script>
 

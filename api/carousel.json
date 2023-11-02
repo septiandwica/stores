@@ -1,0 +1,17 @@
+[
+    {
+        "sliderstit": "Hoodie Collection",
+        "sliderssub": "NEW ARRIVALS",
+        "slidersbg": "./images/slide-01.png"
+    },
+    {
+        "sliderstit": "T-Shirt Collection",
+        "sliderssub": "NEW ARRIVALS",
+        "slidersbg": "./images/slide-02.png"
+    },
+    {
+        "sliderstit": "Book Collection",
+        "sliderssub": "NEW LAUNCHED",
+        "slidersbg": "./images/slide-03.png"
+    }
+]
