@@ -79,12 +79,12 @@
                         <!-- Menu desktop -->
                         <div class="menu-desktop">
                             <ul class="main-menu">
-                                <li class="active-menu">
+                                <li >
                                     <a href="index.html">Home</a>
                                 </li>
 
-                                <li>
-                                    <a href="product.html">Shop</a>
+                                <li class="active-menu">
+                                    <a href="shop.html">Shop</a>
                                 </li>
 
                                 <li>
@@ -123,11 +123,7 @@
                     </li>
 
                     <li>
-                        <a href="product.html">Shop</a>
-                    </li>
-
-                    <li>
-                        <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+                        <a href="shop.html">Shop</a>
                     </li>
 
                     <li>
@@ -170,7 +166,7 @@
                                 <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
                                 <div class="slick3 gallery-lb">
-                                    <div class="item-slick3" data-thumb="images/product-detail-01.jpg">
+                                    <div class="item-slick3">
                                         <div class="wrap-pic-w pos-relative" id="productimg">
                                             <img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
 
@@ -734,7 +730,7 @@
                     <a href="https://instagram.com/setsail.store" class="me-5 text-reset">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a href="" class="me-5 text-reset">
+                    <a href="https://www.linkedin.com/in/setsail-bizaccel-b29b41258" class="me-5 text-reset">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </div>
@@ -757,7 +753,7 @@
                                 </div>
                             </h6>
                             <p class="text-left">
-                                President University Official Merchandise.
+                                President University Merchandise.
                             </p>
                             <a href="https://setsail.president.ac.id" target="_blank" class="text-dark">Powered By.
                                 <img src="./images/icons/LogoSetSail.png" width="150px"></a>
@@ -826,20 +822,30 @@
 
         <!-- Modal1 -->
         <script>
-            let products = null;
+     let products = null;
 
             // Fetch data from JSON file and call showDetail function when data is ready
             fetch('./api/product.json')
-                .then(response => response.json())
-                .then(data => {
-                    products = data;
-                    showDetail();
-                })
-                .catch(error => {
-                    console.error('Error fetching product data:', error);
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        showDetail();
+
+        // Add the jQuery code here
+        $(document).ready(function() {
+            if ($('.slick3').length > 0) {
+                $('.slick3').find('div.item-slick3').each(function() {
+                    $(this).attr('data-thumb', 'assets/img/active-nav-slide.png');
                 });
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching product data:', error);
+    });
 
             function showDetail() {
+       
                 const navlink = document.querySelector('.navlink');
                 const detail = document.querySelector('.product-details');
                 const detailfull = document.querySelector('.product-detailsfull');
