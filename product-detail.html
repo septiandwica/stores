@@ -522,57 +522,7 @@
             }
 
         </script>
-       <!-- <script>
-     let products = null;
-
-            // Fetch data from JSON file and call showDetail function when data is ready
-            fetch('./api/product.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        showDetail();
-    })
-    .catch(error => {
-        console.error('Error fetching product data:', error);
-    });
-
-            function showDetail() {
        
-                const navlink = document.querySelector('.navlink');
-                const detail = document.querySelector('.product-details');
-                const detailfull = document.querySelector('.product-detailsfull');
-
-                const productId = new URLSearchParams(window.location.search).get('id');
-
-                let thisProduct = products.filter(product => product.id == productId)[0];
-
-                if (!thisProduct) {
-                    window.location.href = "/";
-                    return;
-                }
-
-                // Update the HTML with product details
-                navlink
-                    .querySelector('span#navbarproduct')
-                    .innerText = thisProduct.producttitle;
-                detail
-                    .querySelector('#productimg img')
-                    .src = thisProduct.productimg;
-                detail
-                    .querySelector('h4#producttit')
-                    .innerText = thisProduct.producttitle;
-                detail
-                    .querySelector('span#productprice')
-                    .innerText = thisProduct.productprice;
-                detail
-                    .querySelector('p#productsubdesc')
-                    .innerText = thisProduct.productsubdesc;
-                detailfull
-                    .querySelector('p#productdesc')
-                    .innerText = thisProduct.productdesc;
-                
-            }
-        </script>  -->
         <!--===============================================================================================-->
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
         <!--===============================================================================================-->
