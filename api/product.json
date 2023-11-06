@@ -7,8 +7,9 @@
         "productimg": "./images/product-01.jpg",
         "productsubdesc": "T-Shirt President University",
         "productdesc": "T-Shirt President University. Short-sleeved t-shirts made exclusively with the theme 'President University'. One of the best selling t-shirts with screen printed designs & an interesting combination of designs. The material used is selected quality cotton which absorbs sweat so as to provide comfort for anyone who wears it.",
-        "productmaterial": "80% cotton combed",
-        "productdimensions": "110x33x100cm",
+        "materials" : "60 % cotton",
+        "color":"White",
+        "size" :"S, M, L, XL, 2XL",
         "imgdetail":{
             "detail1" : "./images/product-detail-02.jpg"
         } 
@@ -21,8 +22,9 @@
         "productimg": "./images/product-02.jpg",
         "productsubdesc": "Hoodie President University",
         "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
-        "productmaterial": "80% cotton combed",
-        "productdimensions": "110x33x100cm",
+        "materials" : "60 % cotton",
+        "color":"White",
+        "size" :"S, M, L, XL, 2XL",
         "imgdetail":{
             "detail1" : "./images/product-detail-03.jpg"
         } 
@@ -35,7 +37,9 @@
         "productimg": "./images/product-03.jpg",
         "productsubdesc": "Hoodie President University",
         "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
-        "productmaterial": "80% cotton combed",
+        "materials" : "60 % cotton",
+        "color":"White",
+        "size" :"S, M, L, XL, 2XL",
         "imgdetail":{
             "detail1" : "./images/product-detail-03.jpg"
         } 
@@ -48,8 +52,9 @@
         "productimg": "./images/product-04.jpg",
         "productsubdesc": "Hoodie President University",
         "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
-        "productmaterial": "80% cotton combed",
-        "productdimensions": "110x33x100cm",
+        "materials" : "60 % cotton",
+        "color":"White",
+        "size" :"S, M, L, XL, 2XL",
         "imgdetail":{
             "detail1" : "./images/product-detail-03.jpg"
         } 
@@ -62,8 +67,9 @@
         "productimg": "./images/product-05.jpg",
         "productsubdesc": "T-Shirt President University",
         "productdesc": "T-Shirt President University. Short-sleeved t-shirts made exclusively with the theme 'President University'. One of the best selling t-shirts with screen printed designs & an interesting combination of designs. The material used is selected quality cotton which absorbs sweat so as to provide comfort for anyone who wears it.",
-        "productmaterial": "80% cotton combed",
-        "productdimensions": "110x33x100cm",
+        "materials" : "60 % cotton",
+        "color":"White",
+        "size" :"S, M, L, XL, 2XL",
         "imgdetail":{
             "detail1" : "./images/product-detail-02.jpg"
         } 
@@ -75,8 +81,9 @@
         "productimg": "./images/product-06.jpg",
         "productsubdesc": "Hooide President University",
         "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
-        "productmaterial": "80% cotton combed",
-        "productdimensions": "110x33x100cm",
+        "materials" : "60 % cotton",
+        "color":"White",
+        "size" :"S, M, L, XL, 2XL",
         "imgdetail":{
             "detail1" : "./images/product-detail-03.jpg"
         } 
@@ -89,8 +96,9 @@
         "productimg": "./images/product-07.jpg",
         "productsubdesc": "Indonesian Book: Elex Media Komputindo",
         "productdesc": "10 Habits of Highly Productive People: is a practical guide designed to help you achieve high levels of productivity and create yourself as a strong and competitive person. These proven habits can be applied in various aspects of life, from personal life to career, and from corporate strategy to business. In a disruptive era full of rapid and unpredictable changes, being a productive human being is the key to remaining relevant and successfully facing it. \n\n Author: Jazak Yus Afriansyah & Maria Jacinta Arquisola \n Publisher: Elex Media Komputindo Cover \n Type: Soft Cover Indonesian",
-        "productmaterial": "art paper",
-        "productdimensions": "110x33x100cm",
+        "materials" : "Art Paper, Paper",
+        "color":"-",
+        "size" :"100 pg",
         "imgdetail":{
             "detail1" : "./images/product-07.jpg"
         } 
