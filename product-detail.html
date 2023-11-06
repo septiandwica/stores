@@ -166,7 +166,7 @@
                                 <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
                                 <div class="slick3 gallery-lb">
-                                    <div class="item-slick3" data-thumb="images/product-detail-01.jpg">
+                                    <div class="item-slick3">
                                         <div class="wrap-pic-w pos-relative" id="productimg">
                                             <img id="detail1" src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
 
@@ -178,7 +178,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="item-slick3" data-thumb="images/product-detail-02.jpg">
+                                    <div class="item-slick3" >
                                         <div class="wrap-pic-w pos-relative"  id="productimg">
                                             <img id="detail2" src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
 
@@ -827,7 +827,7 @@
                 const navlink = document.querySelector('.navlink');
                 const detail = document.querySelector('.product-details');
                 const detailfull = document.querySelector('.product-detailsfull');
-    
+
                 const productId = new URLSearchParams(window.location.search).get('id');
     
                 let thisProduct = products.find(product => product.id == productId); // Menggunakan find() untuk mencari produk dengan ID yang sesuai
@@ -847,7 +847,14 @@
                 detail.querySelector('span#productprice').innerText = thisProduct.productprice;
                 detail.querySelector('p#productsubdesc').innerText = thisProduct.productsubdesc;
                 detailfull.querySelector('p#productdesc').innerText = thisProduct.productdesc;
-            
+                const gallery = document.querySelector('.slick3.gallery-lb');
+    const galleryItems = gallery.querySelectorAll('.item-slick3');
+    
+    // Pastikan imgdetail.detail1 dan imgdetail.detail2 ada sebelum menambahkan atribut data-thumb
+    if (thisProduct.productimg && thisProduct.imgdetail && thisProduct.imgdetail.detail1 && thisProduct.imgdetail.detail2) {
+        galleryItems[0].setAttribute('data-thumb', thisProduct.productimg);
+        galleryItems[1].setAttribute('data-thumb', thisProduct.imgdetail.detail1);
+    }
             }
 
         </script>

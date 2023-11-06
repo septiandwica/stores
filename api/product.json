@@ -10,8 +10,8 @@
         "productmaterial": "80% cotton combed",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "./images/product-detail-02.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "/images/product-detail-02.jpg",
+            "detail2" : "/images/product-detail-02.jpg"
         } 
 
     }, {
