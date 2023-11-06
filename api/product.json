@@ -10,8 +10,7 @@
         "productmaterial": "80% cotton combed",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "/images/product-detail-02.jpg",
-            "detail2" : "/images/product-detail-02.jpg"
+            "detail1" : "/images/product-detail-02.jpg"
         } 
 
     }, {
@@ -25,8 +24,7 @@
         "productmaterial": "80% cotton combed",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "./images/product-detail-03.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "./images/product-detail-03.jpg"
         } 
 
     }, {
@@ -39,8 +37,7 @@
         "productdesc": "Outer Sweater Hoodie made from 280GSM Cotton Fleece. The inside is furry and thick enough, comfortable to withstand the cold.",
         "productmaterial": "80% cotton combed",
         "imgdetail":{
-            "detail1" : "./images/product-detail-03.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "./images/product-detail-03.jpg"
         } 
 
     }, {
@@ -54,8 +51,7 @@
         "productmaterial": "80% cotton combed",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "./images/product-detail-03.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "./images/product-detail-03.jpg"
         } 
 
     }, {
@@ -69,8 +65,7 @@
         "productmaterial": "80% cotton combed",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "./images/product-detail-02.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "./images/product-detail-02.jpg"
         } 
     }, {
         "id": 6,
@@ -83,8 +78,7 @@
         "productmaterial": "80% cotton combed",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "./images/product-detail-03.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "./images/product-detail-03.jpg"
         } 
 
     }, {
@@ -98,8 +92,7 @@
         "productmaterial": "art paper",
         "productdimensions": "110x33x100cm",
         "imgdetail":{
-            "detail1" : "./images/product-detail-04.jpg",
-            "detail2" : "./images/product-detail-02.jpg"
+            "detail1" : "./images/product-07.jpg"
         } 
 
     }
