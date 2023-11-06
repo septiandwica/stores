@@ -128,44 +128,35 @@
 
     /*==================================================================
     [ Isotope ]*/
-    var $topeContainer = $('.isotope-grid');
-    var $filter = $('.filter-tope-group');
-
-    // filter items on button click
-    $filter.each(function () {
+    $(document).ready(function () {
+        var $topeContainer = $('.isotope-grid');
+        var $filter = $('.filter-tope-group');
+        var isotopeButton = $('.filter-tope-group button');
+    
+        // Filter items on button click
         $filter.on('click', 'button', function () {
             var filterValue = $(this).attr('data-filter');
-            $topeContainer.isotope({filter: filterValue});
+            $topeContainer.isotope({ filter: filterValue });
+            
+            // Remove and add the 'how-active1' class for active button
+            isotopeButton.removeClass('how-active1');
+            $(this).addClass('how-active1');
         });
-        
-    });
-
-    // init Isotope
-    $(window).on('load', function () {
-        var $grid = $topeContainer.each(function () {
-            $(this).isotope({
+    
+        // Initialize Isotope
+        $(window).on('load', function () {
+            $topeContainer.isotope({
                 itemSelector: '.isotope-item',
                 layoutMode: 'fitRows',
                 percentPosition: true,
-                animationEngine : 'best-available',
+                animationEngine: 'best-available',
                 masonry: {
                     columnWidth: '.isotope-item'
                 }
             });
         });
     });
-
-    var isotopeButton = $('.filter-tope-group button');
-
-    $(isotopeButton).each(function(){
-        $(this).on('click', function(){
-            for(var i=0; i<isotopeButton.length; i++) {
-                $(isotopeButton[i]).removeClass('how-active1');
-            }
-
-            $(this).addClass('how-active1');
-        });
-    });
+    
     /*==================================================================
     [ Show modal1 ]*/
     $('.js-show-modal1').on('click',function(e){
