@@ -849,12 +849,43 @@
                 detailfull.querySelector('p#productdesc').innerText = thisProduct.productdesc;
                 const gallery = document.querySelector('.slick3.gallery-lb');
     const galleryItems = gallery.querySelectorAll('.item-slick3');
-    
-    // Pastikan imgdetail.detail1 dan imgdetail.detail2 ada sebelum menambahkan atribut data-thumb
+
+    // Ensure imgdetail.detail1 and imgdetail.detail2 exist before adding the data-thumb attribute
     if (thisProduct.productimg && thisProduct.imgdetail && thisProduct.imgdetail.detail1 && thisProduct.imgdetail.detail2) {
         galleryItems[0].setAttribute('data-thumb', thisProduct.productimg);
         galleryItems[1].setAttribute('data-thumb', thisProduct.imgdetail.detail1);
     }
+
+    // Initialize the image slider
+    $('.wrap-slick3').each(function () {
+        $(this).find('.slick3').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 6000,
+            arrows: true,
+            appendArrows: $(this).find('.wrap-slick3-arrows'),
+            prevArrow: '<button class="arrow-slick3 prev-slick3"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+            nextArrow: '<button class="arrow-slick3 next-slick3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+            dots: true,
+            appendDots: $(this).find('.wrap-slick3-dots'),
+            dotsClass: 'slick3-dots',
+            customPaging: function (slick, index) {
+                const gallery = document.querySelector('.slick3.gallery-lb');
+                const galleryItems = gallery.querySelectorAll('.item-slick3');
+
+                if (index === 0) {
+                    return '<img src="' + thisProduct.productimg + '"/><div class="slick3-dot-overlay"></div>';
+                } else if (index === 1 && thisProduct.imgdetail && thisProduct.imgdetail.detail1) {
+                    return '<img src="' + thisProduct.imgdetail.detail1 + '"/><div class="slick3-dot-overlay"></div>';
+                } else {
+                    return ''; // Handle other indices as needed
+                }
+            },
+        });
+    });
             }
 
         </script>
